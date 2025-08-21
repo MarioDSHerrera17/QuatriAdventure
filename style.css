@@ -1,0 +1,130 @@
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Slideshow */
+.hero-slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fade 36s infinite;
+  opacity: 0;
+}
+
+.hero-slideshow img:nth-child(1) { animation-delay: 0s; }
+.hero-slideshow img:nth-child(2) { animation-delay: 6s; }
+.hero-slideshow img:nth-child(3) { animation-delay: 12s; }
+.hero-slideshow img:nth-child(4) { animation-delay: 18s; }
+.hero-slideshow img:nth-child(5) { animation-delay: 24s; }
+.hero-slideshow img:nth-child(6) { animation-delay: 30s; }
+
+@keyframes fade {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  30% {opacity: 1;}
+  40% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+/* Overlay oscuro */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+
+/* Texto del hero */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/* ===== CARDS ===== */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+/* ===== MODALES ===== */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-title {
+  font-weight: bold;
+}
+.modal-body p {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  font-size: 0.9rem;
+}
+footer a {
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #25D366; /* verde WhatsApp */
+}
+
+/* ===== UBICACIÓN Y RESERVA ===== */
+#ubicacion h2 {
+  font-size: 1.8rem;
+}
+#ubicacion form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#btnWhatsApp {
+  background: #25D366;
+  border: none;
+}
+#btnWhatsApp.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}

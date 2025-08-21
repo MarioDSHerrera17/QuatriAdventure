@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>QuatriAdventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Imagenes/Logo/LOGO.jpg" type="image/jpg">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="Imagenes/Logo/LOGO.jpg" alt="QuatriAdventure Logo" width="40" height="40" class="me-2">
+      <span class="fw-bold">QuatriAdventure</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#recorridos">Recorridos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero container-fluid p-0">
+  <div class="hero-text d-flex flex-column align-items-center justify-content-center text-center p-5">
+    <h1 class="display-3 fw-bold">QuatriAdventure</h1>
+    <p class="lead">Recorridos guiados en cuatrimoto en Pinal de Amoles</p>
+    <p class="fs-5">Vive la aventura y recorre Pinal de Amoles en cuatrimoto. Naturaleza, adrenalina y paisajes únicos te esperan.</p>
+    <a href="#recorridos" class="btn btn-success btn-lg mt-3">Ver Recorridos</a>
+  </div>
+
+  <!-- Slideshow -->
+  <div class="hero-slideshow">
+    <img src="Imagenes/Cascadas/chuveje.jpg" alt="Fondo 1">
+    <img src="Imagenes/Cedral/cascada cedral.jpg" alt="Fondo 2">
+    <img src="Imagenes/Panoramicos/express.jpg" alt="Fondo 3">
+    <img src="Imagenes/Nubes y sombras/mirador de cristal.jpg" alt="Fondo 4">
+    <img src="Imagenes/Bucareli/Viking y Exconvento.jpeg" alt="Fondo 5">
+    <img src="Imagenes/Panoramicos/pinal de noche2.jpg" alt="Fondo 6">
+  </div>
+</header>
+
+<!-- Recorridos -->
+<section id="recorridos" class="container py-5">
+  <h2 class="text-center mb-5 fw-bold">Nuestros Recorridos</h2>
+  <div class="row g-4">
+
+    <!-- EXPRESS -->
+    <div class="col-md-4">
+      <div class="card shadow h-100">
+        <img src="Imagenes/Panoramicos/express.jpg" class="card-img-top" alt="Paseo Express">
+        <div class="card-body text-center">
+          <h5 class="card-title">Paseo Panorámico EXPRESS</h5>
+          <p class="card-text">1 Hora</p>
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#expressModal">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PINAL DE NOCHE -->
+    <div class="col-md-4">
+      <div class="card shadow h-100">
+        <img src="Imagenes/Panoramicos/pinal de noche.jpg" class="card-img-top" alt="Pinal de Noche">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pinal de Noche</h5>
+          <p class="card-text">2 Horas</p>
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#nocheModal">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISTAS Y SABORES -->
+    <div class="col-md-4">
+      <div class="card shadow h-100">
+        <img src="Imagenes/Panoramicos/express 2.jpg" class="card-img-top" alt="Vistas y Sabores">
+        <div class="card-body text-center">
+          <h5 class="card-title">Vistas y Sabores</h5>
+          <p class="card-text">2.5 Horas</p>
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#saboresModal">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NUBES Y SOMBRAS -->
+    <div class="col-md-4">
+      <div class="card shadow h-100">
+        <img src="Imagenes/Nubes y sombras/mirador de cristal.jpg" class="card-img-top" alt="Nubes y Sombras">
+        <div class="card-body text-center">
+          <h5 class="card-title">Nubes y Sombras</h5>
+          <p class="card-text">2 Horas</p>
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#nubesModal">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- EL CEDRAL -->
+    <div class="col-md-4">
+      <div class="card shadow h-100">
+        <img src="Imagenes/Cedral/cedral2.jpg" class="card-img-top" alt="El Cedral">
+        <div class="card-body text-center">
+          <h5 class="card-title">El Cedral</h5>
+          <p class="card-text">2.5 Horas</p>
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cedralModal">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUCARELI EXTREMO -->
+    <div class="col-md-4">
+      <div class="card shadow h-100">
+        <img src="Imagenes/Bucareli/Viking y Exconvento.jpeg" class="card-img-top" alt="Bucareli Extremo">
+        <div class="card-body text-center">
+          <h5 class="card-title">Bucareli Extremo</h5>
+          <p class="card-text">8 Horas</p>
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#bucareliModal">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASCADAS -->
+    <div class="col-md-4">
+      <div class="card shadow h-100">
+        <img src="Imagenes/Cascadas/chuveje2.jpg" class="card-img-top" alt="Cascadas">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cascadas</h5>
+          <p class="card-text">8 Horas</p>
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cascadasModal">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== MODALES (igual que antes, no los quité) ===== -->
+<!-- EXPRESS -->
+<div class="modal fade" id="expressModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Paseo Panorámico EXPRESS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <p>Nos adentraremos en el bosque donde encontraremos paisajes impresionantes y disfrutaremos de hermosos lugares únicos.</p>
+        <p><strong>Duración:</strong> 1 Hora</p>
+        <p><strong>Horarios:</strong> 9:00 AM - 6:00 PM</p>
+        <p><em>No se necesita experiencia.</em></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PINAL DE NOCHE -->
+<div class="modal fade" id="nocheModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Pinal de Noche</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <p>Recorreremos distintos puntos para admirar el pueblo, conocer su historia y leyendas, y un cielo estrellado inolvidable. (Disponible también de día)</p>
+        <p><strong>Duración:</strong> 2 Horas</p>
+        <p><strong>Horarios:</strong> 9:00 AM - 8:00 PM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VISTAS Y SABORES -->
+<div class="modal fade" id="saboresModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Vistas y Sabores</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <p>Disfruta de los paisajes de Pinal de Amoles, conoce historias y leyendas, y finaliza con pruebas de licores y ates artesanales con más de 200 años de tradición.</p>
+        <p><strong>Duración:</strong> 2.5 Horas</p>
+        <p><strong>Horarios:</strong> 9:00 AM - 3:00 PM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NUBES Y SOMBRAS -->
+<div class="modal fade" id="nubesModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Nubes y Sombras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <p>Visita el Mirador Peña de la Guacamaya, el mirador de cristal, la Cueva del Judío, la Puerta del Cielo y conoce leyendas de Pinal de Amoles.</p>
+        <p><strong>Duración:</strong> 2 Horas</p>
+        <p><strong>Incluye:</strong> Entradas</p>
+        <p><strong>Horarios:</strong> 9:00 AM - 3:00 PM (No disponible miércoles)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EL CEDRAL -->
+<div class="modal fade" id="cedralModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">El Cedral</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <p>Cascada de 40m, mirador entre árboles al borde de un precipicio de 200m, columpio, pastizales, arroyos y ajolotes.</p>
+        <p><strong>Duración:</strong> 2.5 Horas</p>
+        <p><strong>Incluye:</strong> Entradas</p>
+        <p><strong>Horarios:</strong> 9:00 AM - 4:00 PM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BUCARELI EXTREMO -->
+<div class="modal fade" id="bucareliModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Bucareli Extremo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <p>Aventura de 40 km hasta la misión de Bucareli. Ex convento, tirolesas, puentes colgantes, salto al vacío y pinturas rupestres.</p>
+        <p><strong>Duración:</strong> 8 Horas</p>
+        <p><strong>Incluye:</strong> Entradas al exconvento, seguro (No incluye tirolesas)</p>
+        <p><strong>Horarios:</strong> 8:30 AM - 11:00 AM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CASCADAS -->
+<div class="modal fade" id="cascadasModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Cascadas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <p>Recorre 6 km hasta la cascada El Salto, baja 258 escalones y nada en sus pozas y en las del Chuveje.</p>
+        <p><strong>Duración:</strong> 8 Horas</p>
+        <p><strong>Incluye:</strong> Entradas, seguro</p>
+        <p><strong>Horarios:</strong> 8:30 AM - 11:00 AM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ubicación y Reserva -->
+<section id="ubicacion" class="container py-5">
+  <div class="row g-4">
+    <div class="col-md-6">
+      <h2 class="mb-4 fw-bold">Ubicación</h2>
+      <p>5 de Mayo 16, Centro, 76300 Pinal de Amoles, Qro.</p>
+      <div class="ratio ratio-16x9">
+        <iframe 
+          src="https://www.google.com/maps?q=5%20de%20Mayo%2016,%20Centro,%2076300%20Pinal%20de%20Amoles,%20Qro.&output=embed" 
+          style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2 class="mb-4 fw-bold">Agenda tu recorrido</h2>
+      <form id="reservaForm">
+        <div class="mb-3">
+          <label for="recorrido" class="form-label">Selecciona un recorrido:</label>
+          <select id="recorrido" class="form-select" required>
+            <option value="">-- Elige un recorrido --</option>
+            <option value="Paseo Panorámico EXPRESS">Paseo Panorámico EXPRESS</option>
+            <option value="Pinal de Noche">Pinal de Noche</option>
+            <option value="Vistas y Sabores">Vistas y Sabores</option>
+            <option value="Nubes y Sombras">Nubes y Sombras</option>
+            <option value="El Cedral">El Cedral</option>
+            <option value="Bucareli Extremo">Bucareli Extremo</option>
+            <option value="Cascadas">Cascadas</option>
+          </select>
+        </div>
+        <div class="d-flex gap-2">
+          <a id="btnWhatsApp" class="btn btn-success disabled" target="_blank">Agendar por WhatsApp</a>
+          <a href="tel:+524423653316" class="btn btn-primary">Llamar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-4">
+  <p>&copy; 2025 QuatriAdventure | Todos los derechos reservados</p>
+  <div class="mt-2">
+    <a href="https://wa.me/524423653316" target="_blank" class="text-white me-3"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://www.facebook.com/QuatriAdventurePinalDeAmoles" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+    <a href="https://www.instagram.com/quatriadventure_pinal/" target="_blank" class="text-white"><i class="bi bi-instagram"></i></a>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<script>
+  const recorridoSelect = document.getElementById("recorrido");
+  const btnWhatsApp = document.getElementById("btnWhatsApp");
+
+  recorridoSelect.addEventListener("change", function() {
+    if (this.value) {
+      const mensaje = `Hola, quiero reservar el recorrido: ${this.value}`;
+      const url = `https://wa.me/524423653316?text=${encodeURIComponent(mensaje)}`;
+      btnWhatsApp.href = url;
+      btnWhatsApp.classList.remove("disabled");
+    } else {
+      btnWhatsApp.href = "#";
+      btnWhatsApp.classList.add("disabled");
+    }
+  });
+</script>
+
+</body>
+</html>
