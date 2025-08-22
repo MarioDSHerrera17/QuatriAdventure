@@ -1,16 +1,42 @@
 /* ===== HERO ===== */
 .hero {
   position: relative;
-  height: 100vh;
+  height: auto;            /* 👈 que no se obligue a ocupar todo el alto */
+  min-height: 350px;       /* 👈 alto mínimo para que se vea bien */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  /* 👈 para que el texto quede centrado */
+  padding: 40px 0;         /* espacio arriba y abajo */
+}
+
+.hero-slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;       /* 👈 el slideshow no será de ancho completo */
+  height: 500px;           /* 👈 altura fija más controlada */
+  margin: 0 auto;
   overflow: hidden;
 }
 
-/* Slideshow */
+/* Slideshow 
 .hero-slideshow img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation: fade 36s infinite;
+  opacity: 0;
+}*/
+.hero-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* 👈 ahora la imagen se ve completa */
+  background: #000;        /* rellena los espacios vacíos */
   animation: fade 36s infinite;
   opacity: 0;
 }
@@ -45,7 +71,7 @@
   z-index: 2;
   color: #fff;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 25px auto 0;
   text-shadow: 0 3px 6px rgba(0,0,0,0.7);
 }
 
